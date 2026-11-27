@@ -1,4 +1,4 @@
-// energie-heute-karte v1.0.0
+// energie-heute-karte v1.0.1
 // Einzeln installierbares Modul (Home Assistant Marketplace / HACS, Kategorie Dashboard).
 window.customCards = window.customCards || [];
 window.customCardFeatures = window.customCardFeatures || [];
@@ -278,7 +278,7 @@ class EnergieHeuteKarte extends HTMLElement {
 }
 if (!customElements.get("energie-heute-karte")) customElements.define("energie-heute-karte", EnergieHeuteKarte);
 if (!window.customCards.some((c) => c.type === "energie-heute-karte"))
-  window.customCards.push({ type: "energie-heute-karte", name: "Energie heute", description: "PV, Verbrauch, Batterie, Autarkie heute, Tageslicht und Solar-Prognose" });
+  window.customCards.push({ type: "energie-heute-karte", name: "Energie heute", description: "PV, Verbrauch, Batterie, Autarkie heute, Tageslicht und Solar-Prognose", preview: true });
 }
 
 console.info("%c energie-heute-karte %c v1.0.0 ", "color:#fff;background:#03a9f4;font-weight:700", "color:#03a9f4");
